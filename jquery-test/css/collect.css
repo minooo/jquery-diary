@@ -1,0 +1,35 @@
+
+/*收藏列表页*/
+.header {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    background-color: #38c678;
+}
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    margin-top: 32px;
+}
+.mingzi {
+    color: #fff!important;
+    margin-top: 42px;
+}
+.collect-list {
+    font-size: 20px;
+    color: #5c5c5c;
+    cursor: pointer;
+    display: none;
+}
+.collect-list:hover {
+    color: #c40000;
+}
+.collect-link {
+    color: #626262;
+    font-size: 15px;
+    font-size: 14px;
+}
+.collect-link:hover {
+    color: #38c678;
+}

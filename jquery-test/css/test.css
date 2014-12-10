@@ -1,0 +1,28 @@
+/*.test {
+    width: 1000px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.img {
+    position: absolute;
+    width: 3000px;
+}
+.img ul {
+    padding: 0;
+    margin: 0;
+}
+.img ul li {
+    float: left;
+    overflow: hidden;
+    width: 1000px;
+    height: 300px;
+    position: absolute;
+    display: block;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}*/
+.test-1 ul li {
+    display: none;
+}
