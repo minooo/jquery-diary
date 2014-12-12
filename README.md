@@ -28,3 +28,17 @@ var flag = 1;
         }
     })
 </pre></div>
+<br>
+<p>
+<b id="t1">t2-在一个单选组里，如果选定某个单选按钮，那么对应的div就会出现，选择其他则不出现或消失</b>
+</p>
+</blockquote>
+<div class="highlight highlight-javascript"><pre>
+$("input:radio[name='danxuan']").click(function(){
+                if($('#t2').is(':checked')){
+                    $('.t2-content').show();
+                }else{
+                 $('.t2-content').hide();
+                 }
+            })
+</pre></div>
