@@ -5,6 +5,7 @@
 <ul class="task-list">
 <li><a href="#t1">t1-鼠标点击按钮后对应内容逐个出现或消失</a></li>
 <li><a href="#t2">t2-在一个单选组里，如果选定某个单选按钮，那么对应的div就会出现，选择其他则不出现或消失</a></li>
+<li><a href="#t3">t3-字符数限制的函数</a></li>
 </ul>
 <h2>内容</h2>
 <blockquote>
@@ -43,4 +44,21 @@ $("input:radio[name='danxuan']").click(function(){
                  $('.t2-content').hide();
                  }
             })
+</pre></div>
+<br>
+<blockquote>
+<p>
+<b id="t3">t3-字符数限制的函数</b>
+</p>
+</blockquote>
+<div class="highlight highlight-javascript"><pre>
+function xhxz(a,b){
+    $(a).each(function(){                           //遍历每个a元素
+        var zishu=$(this).text().length;            //获取字符数
+        if(zishu >= b){                             //如果字符数超过b
+            var xianzhi=$(this).text().substr(1,b); //则截取该段文字的第2个字到第b个字（包含边界）之间的文本
+            $(this).text(xianzhi+ "...")            //最终输出的文本
+        }
+    })
+};
 </pre></div>
