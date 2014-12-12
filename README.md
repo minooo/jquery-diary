@@ -7,7 +7,7 @@
 </ul>
 
 <blockquote>
-<p><b>鼠标点击元素按次序出现或消失</b>
+<p><b>鼠标点击元素按次序出现或消失</b></p>
 </blockquote>
 <div class="highlight highlight-javascript"><pre>
 var flag = 1;
