@@ -3,5 +3,25 @@
 <hr>
 <h2>目录</h2>
 <ul class="task-list">
-<li><a href="t-001">001-鼠标点击元素按次序出现或消失</a></li>
+<li><a name="user-content-t001">t001-鼠标点击元素按次序出现或消失</a></li>
 </ul>
+
+<blockquote>
+<p><b>鼠标点击元素按次序出现或消失</b>
+</blockquote>
+<div class="highlight highlight-javascript"><pre>
+var flag = 1;
+    $('.container').on('click','a',function(){
+        if(flag == 1){
+            $('.test-1').find('li').first().stop(true,false).show(100,function nihao(){
+                $(this).next().stop(true,false).show(100,nihao)
+            });
+            flag = 2;
+        } else if(flag == 2){
+            $('.test-1').find('li').last().stop(true,false).hide(100,function tahao(){
+                $(this).prev().stop(true,false).hide(100,tahao)
+            });
+            flag = 1;
+        }
+    })
+</pre></div>
