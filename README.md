@@ -3,12 +3,13 @@
 <hr>
 <h2>目录</h2>
 <ul class="task-list">
-<li><a href="#t1">t1-鼠标点击按钮后对应内容<span class="pl-s1">按次序</span>出现或消失</a></li>
+<li><a href="#t1">t1-鼠标点击按钮后对应内容逐个出现或消失</a></li>
+<li><a href="#t2">t2-在一个单选组里，如果选定某个单选按钮，那么对应的div就会出现，选择其他则不出现或消失</a></li>
 </ul>
 <h2>内容</h2>
 <blockquote>
 <p>
-<b id="t1">t1-鼠标点击按钮后对应内容<span class="pl-s1">按次序</span>出现或消失</b><br>
+<b id="t1">t1-鼠标点击按钮后对应内容逐个出现或消失</b><br>
 分析：为了实现这个效果，我用了变量标记法。默认状态下，主体元素被隐藏，判断当前变量值，然后给出相应动作，接着给变量赋值。通过这个方法，可以实现多种效果循环出现！
 </p>
 </blockquote>
@@ -31,7 +32,7 @@ var flag = 1;
 <br>
 <blockquote>
 <p>
-<b id="t1">t2-在一个单选组里，如果选定某个单选按钮，那么对应的div就会出现，选择其他则不出现或消失</b>
+<b id="t2">t2-在一个单选组里，如果选定某个单选按钮，那么对应的div就会出现，选择其他则不出现或消失</b>
 </p>
 </blockquote>
 <div class="highlight highlight-javascript"><pre>
