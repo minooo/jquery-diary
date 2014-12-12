@@ -5,7 +5,7 @@
 <ul class="task-list">
 <li><a href="#t1">t1-鼠标点击元素按次序出现或消失</a></li>
 </ul>
-<hr>
+<h2>内容</h2>
 <blockquote>
 <p>
 <b id="t1">t1-鼠标点击元素按次序出现或消失</b><br>
