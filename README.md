@@ -3,13 +3,13 @@
 <hr>
 <h2>目录</h2>
 <ul class="task-list">
-<li><a name="user-content-t001">t001-鼠标点击元素按次序出现或消失</a></li>
+<li><a href="#t001t">t001-鼠标点击元素按次序出现或消失</a></li>
 </ul>
-
+<br><br><br><br><br><br><br><br><br><br>
 <blockquote>
 <p>
-<b>鼠标点击元素按次序出现或消失</b></br>
-分析：为了实现这个效果，我用了变量标记法。默认状态下，主体元素被隐藏，判断当前变量值，然后给出相应动作，接着给变量急
+<b id="t001">鼠标点击元素按次序出现或消失</b><br>
+分析：为了实现这个效果，我用了变量标记法。默认状态下，主体元素被隐藏，判断当前变量值，然后给出相应动作，接着给变量赋值。通过这个方法，可以实现多种表现循环出现的效果！
 </p>
 </blockquote>
 <div class="highlight highlight-javascript"><pre>
