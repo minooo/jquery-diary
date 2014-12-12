@@ -7,7 +7,10 @@
 </ul>
 
 <blockquote>
-<p><b>鼠标点击元素按次序出现或消失</b></p>
+<p>
+<b>鼠标点击元素按次序出现或消失</b></br>
+分析：为了实现这个效果，我用了变量标记法。默认状态下，主体元素被隐藏，判断当前变量值，然后给出相应动作，接着给变量急
+</p>
 </blockquote>
 <div class="highlight highlight-javascript"><pre>
 var flag = 1;
