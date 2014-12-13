@@ -42,12 +42,10 @@ $("input:radio[name='danxuan']").click(function(){
                  }
             })
 ```
+<br>
+><a name="t3">**t3-字符数限制的函数**
 
-<p>
-<b id="t3">t3-字符数限制的函数</b>
-</p>
-</blockquote>
-<div class="highlight highlight-javascript"><pre>
+```javascript
 function xhxz(a,b){
     $(a).each(function(){                           //遍历每个a元素
         var zishu=$(this).text().length;            //获取字符数
@@ -57,13 +55,4 @@ function xhxz(a,b){
         }
     })
 };
-</pre></div>
-```javascript
-$("input:radio[name='danxuan']").click(function(){
-                if($('#t2').is(':checked')){
-                    $('.t2-content').show();
-                }else{
-                 $('.t2-content').hide();
-                 }
-            })
 ```
