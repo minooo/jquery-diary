@@ -43,7 +43,7 @@ $("input:radio[name='danxuan']").click(function(){
             })
 ```
 <br><br>
-><a name="t3"/>**t3-字符数限制的函数**
+><a name="t3"/> **t3-字符数限制的函数**
 
 ```javascript
 function xhxz(a,b){
