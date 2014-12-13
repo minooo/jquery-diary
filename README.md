@@ -62,3 +62,12 @@ function xhxz(a,b){
     })
 };
 </pre></div>
+```javascript
+$("input:radio[name='danxuan']").click(function(){
+                if($('#t2').is(':checked')){
+                    $('.t2-content').show();
+                }else{
+                 $('.t2-content').hide();
+                 }
+            })
+```
