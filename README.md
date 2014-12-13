@@ -30,7 +30,7 @@ var flag = 1;
         }
     })
 ```
-<br>
+<br><br>
 ><a name="t2"/> **t2-在一个单选组里，如果选定某个单选按钮，那么对应的div就会出现，选择其他则不出现或消失**
 
 ```javascript
@@ -42,7 +42,7 @@ $("input:radio[name='danxuan']").click(function(){
                  }
             })
 ```
-<br>
+<br><br>
 ><a name="t3">**t3-字符数限制的函数**
 
 ```javascript
@@ -54,5 +54,4 @@ function xhxz(a,b){
             $(this).text(xianzhi+ "...")            //最终输出的文本
         }
     })
-};
 ```
