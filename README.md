@@ -16,31 +16,31 @@ jquery前端果盘
 
 ```javascript
 var flag = 1;
-    $('.container').on('click','a',function(){
-        if(flag == 1){
-            $('.test-1').find('li').first().stop(true,false).show(100,function nihao(){
-                $(this).next().stop(true,false).show(100,nihao)
-            });
-            flag = 2;
-        } else if(flag == 2){
-            $('.test-1').find('li').last().stop(true,false).hide(100,function tahao(){
-                $(this).prev().stop(true,false).hide(100,tahao)
-            });
-            flag = 1;
-        }
-    })
+$('.container').on('click','a',function(){
+    if(flag == 1){
+        $('.test-1').find('li').first().stop(true,false).show(100,function nihao(){
+            $(this).next().stop(true,false).show(100,nihao)
+        });
+        flag = 2;
+    } else if(flag == 2){
+        $('.test-1').find('li').last().stop(true,false).hide(100,function tahao(){
+            $(this).prev().stop(true,false).hide(100,tahao)
+        });
+        flag = 1;
+    }
+})
 ```
 <br><br>
 ><a name="t2"/> **t2-在一个单选组里，如果选定某个单选按钮，那么对应的div就会出现，选择其他则不出现或消失**
 
 ```javascript
 $("input:radio[name='danxuan']").click(function(){
-                if($('#t2').is(':checked')){
-                    $('.t2-content').show();
-                }else{
-                 $('.t2-content').hide();
-                 }
-            })
+    if($('#t2').is(':checked')){
+        $('.t2-content').show();
+    }else{
+        $('.t2-content').hide();
+    }
+})
 ```
 <br><br>
 ><a name="t3"/> **t3-字符数限制的函数**
@@ -51,7 +51,8 @@ function xhxz(a,b){
         var zishu=$(this).text().length;            //获取字符数
         if(zishu >= b){                             //如果字符数超过b
             var xianzhi=$(this).text().substr(1,b); //则截取该段文字的第2个字到第b个字（包含边界）之间的文本
-            $(this).text(xianzhi+ "...")            //最终输出的文本
+            $(this).text(xianzhi+ "...")            //替代文本
         }
     })
+};
 ```
