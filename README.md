@@ -9,14 +9,9 @@ jquery前端果盘
 * [t2-在一个单选组里，如果选定某个单选按钮，那么对应的div就会出现，选择其他则不出现或消失](#t2)
 * [t3-字符数限制的函数](#t3)
 ##内容
->你好
-<blockquote>
-<p>
-<b id="t1">t1-鼠标点击按钮后对应内容逐个出现或消失</b><br>
+><a name="t1"/>**t1-鼠标点击按钮后对应内容逐个出现或消失**<br>
 分析：为了实现这个效果，我用了变量标记法。默认状态下，主体元素被隐藏，判断当前变量值，然后给出相应动作，接着给变量赋值。通过这个方法，可以实现多种效果循环出现！
-</p>
-</blockquote>
-<div class="highlight highlight-javascript"><pre>
+```javascript
 var flag = 1;
     $('.container').on('click','a',function(){
         if(flag == 1){
@@ -31,9 +26,8 @@ var flag = 1;
             flag = 1;
         }
     })
-</pre></div>
-<br>
-<blockquote>
+```
+
 <p>
 <b id="t2">t2-在一个单选组里，如果选定某个单选按钮，那么对应的div就会出现，选择其他则不出现或消失</b>
 </p>
