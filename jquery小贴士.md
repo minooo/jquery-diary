@@ -7,6 +7,7 @@ jquery小贴士
 ##目录
 * [t1-find()和children()的区别](#t1)
 * [t2-正确使用事件委托](#t2)
+* [t3-如何使用console.time()计算jquery代码执行时间](#t3)
 
 ##内容
 ><b id="t1">t1-find()和children()的区别</b><br>
@@ -32,7 +33,7 @@ $('#t').on('click','td',function(){
 由此我们可以更直观的看出代码如何写效果更高
 
 ```javascript
-//速度最快，推荐！
+    //速度最快，推荐！
     console.time('good');
     var $page = $('#page'),option;
     for(var i=1;i<1000;i++){
