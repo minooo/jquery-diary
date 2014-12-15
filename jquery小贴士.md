@@ -13,13 +13,15 @@ jquery小贴士
 简单来说，find()会查找当前元素下的所有元素，而children()会查找当前元素下的第一层级的元素。find()找的是子孙元素，children()找的是子女元素！
 <br><br>
 
-><a name="t2"/> **t2-正确使用时间委托**<br>
+><a name="t2"/> **t2-正确使用时间委托**
 比如我要在单元格上绑定一个单击事件,假设这个表格有100个单元格
+
 ```javascript
 //这种写法直接给表格增加了100个点击事件！降低了性能
 $('#t').find('td').click(function(){
     $(this).css({'color':'red','background':'yellow'});
 })
+
 //其实你只需要委托给这个表格一个事件就可以了，比如这样
 $('#t').on('click','td',function(){
     $(this).css({'color':'red','background':'yellow'});
