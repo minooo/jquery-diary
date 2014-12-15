@@ -28,3 +28,32 @@ $('#t').on('click','td',function(){
 }
 ```
 <br><br>
+><a name="t3"/> **t3-使用console.time()计算jquery代码执行时间**<br>
+由此我们可以更直观的看出代码如何写效果更高
+
+```javascript
+//速度最快，推荐！
+    console.time('good');
+    var $page = $('#page'),option;
+    for(var i=1;i<1000;i++){
+        option += '<option val='+i+'>第 '+i+' 页</option>'
+    }
+    $page.append(option);
+    console.timeEnd('good');
+
+    //速度变慢，不推荐！
+    console.time('bad');
+    var $page = $('#page');
+    for(var i=1;i<1000;i++){
+        $page.append('<option value='+i+'>第 '+i+' 页</option>')
+    }
+    console.timeEnd('bad');
+
+    //速度最慢，强烈不推荐
+    console.time('very-bad');
+    for(var i=1;i<1000;i++){
+        $('#page').append('<option value='+i+'>第 '+i+' 页</option>');
+    };
+    console.timeEnd('very-bad');
+```
+<br><br>
