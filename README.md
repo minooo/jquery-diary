@@ -56,3 +56,67 @@ function xhxz(a,b){
     })
 };
 ```
+<br><br>
+><a name="t4"/> **t4-价钱联动**
+
+```javascript
+    var price = 138;                      //这个价格的变量设置的很有必要
+    var seng =30;
+    $(".btnn-minus").click(function(){
+        var sum = $(".numm").val();
+        sum --;
+        if(sum<1){
+            sum = 1;
+            $(".tipss").show();          //提示语言：最低不能小于1显示
+        }else{
+            $(".tipss").hide();          //提示语言隐藏
+            $(".tipsss").hide();         //提示语言隐藏
+        }
+        var pr ='￥'+price*sum;          //总计价
+        var s = '节省'+seng*sum+'元';    //总节约钱数
+        $(".last-seng").html(s);        //节约钱数字符替换
+        $(".pre-money").html(pr);       //总价钱替换
+        $(".last-money").html(pr);      //总价钱替换
+        $(".numm").val(sum);
+    });
+    $(".btnn-plus").click(function(){
+        var sum2 = $(".numm").val();
+        sum2 ++;
+        if(sum2>99){
+            sum2 = 99;
+            $(".tipsss").show();
+        }else{
+            $(".tipss").hide();
+            $(".tipsss").hide();
+        }
+        var pr ='￥'+price*sum2;
+        var s = '节省'+seng*sum2+'元';
+        $(".last-seng").html(s);
+        $(".pre-money").html(pr);
+        $(".last-money").html(pr);
+        $(".numm").val(sum2);
+    });
+
+    $(".numm").blur(function(){
+        var sum = $(".numm").val();     //脱离焦点后，值如果不为数字，那么默认为1
+        if(isNaN(sum)){sum =1};
+        if(sum>99){
+            sum = 99;
+            $(".tipsss").show();
+            $(".tipss").hide();
+        }else if(sum<1){
+            sum = 1;
+            $(".tipss").show();
+            $(".tipsss").hide();
+        }else{
+            $(".tipss").hide();
+            $(".tipsss").hide();
+        }
+        var pr ='￥'+price*sum;
+        var s = '节省'+seng*sum+'元';
+        $(".last-seng").html(s);
+        $(".pre-money").html(pr);
+        $(".last-money").html(pr);
+        $(".numm").val(sum);
+    });
+```
