@@ -9,11 +9,11 @@ jquery小贴士
 * [t2-正确使用事件委托](#t2)
 
 ##内容
-><b id="t1">find()和children()的区别</b><br>
+><b id="t1">t1-find()和children()的区别</b><br>
 简单来说，find()会查找当前元素下的所有元素，而children()会查找当前元素下的第一层级的元素。find()找的是子孙元素，children()找的是子女元素！
 
 <br><br>
-><a name="t2"/> **t2-正确使用时间委托**
+><a name="t2"/> **t2-正确使用事件委托**
 比如我要在单元格上绑定一个单击事件,假设这个表格有100个单元格
 
 ```javascript
