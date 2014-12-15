@@ -20,7 +20,6 @@ jquery小贴士
 $('#t').find('td').click(function(){
     $(this).css({'color':'red','background':'yellow'});
 })
-
 //其实你只需要委托给这个表格一个事件就可以了，比如这样
 $('#t').on('click','td',function(){
     $(this).css({'color':'red','background':'yellow'});
