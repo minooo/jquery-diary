@@ -38,4 +38,15 @@
   padding: 2px;
 }
 ```
-  
+#####jquery水平垂直居中代码
+```javascript
+$(window).resize(function(){ 
+$('.className').css({ 
+position:'absolute', 
+left: ($(window).width() - $('.className').outerWidth())/2, 
+top: ($(window).height() - $('.className').outerHeight())/2 + $(document).scrollTop() 
+}); 
+}); 
+//初始化函数 
+$(window).resize(); 
+```
