@@ -4,7 +4,6 @@
 #####window默认的编码是GBK，如何转为utf-8?
     运行cmd,输入chcp 65001 运行即可！
 #####css3水平垂直居中代码
-    运行cmd,输入chcp 65001 运行即可！
     .center {
   width: 300px;
   height: 200px;
