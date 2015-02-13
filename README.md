@@ -51,7 +51,7 @@ top: ($(window).height() - $('.className').outerHeight())/2 + $(document).scroll
 $(window).resize(); 
 ```
 
-#####window 自适应的图片如何等比例缩放?
+##### 自适应的图片如何等比例缩放?
     首先，图片要自带 width=300 height=450 属性。
     然后jquery代码  $('.my-img').height($('.my-img').width/3*4);即可
     
