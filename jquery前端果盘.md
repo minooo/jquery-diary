@@ -121,3 +121,33 @@ function xhxz(a,b){
         $(".numm").val(sum);
     });
 ```
+<br><br>
+><a name="t5"/> **t5-手机端文本超出两行（scss代码）**
+
+```javascript
+.wrap {
+  max-width:640px;
+  min-width:320px;
+  margin: 15px auto;
+  .w-con {
+    padding: 15px;
+    height: 120px;                       //实现垂直居中，必要的高度需要设置
+    border: 1px solid red;               
+    display: table;                      //父容器display设为table
+    .my-p {
+      display: table-cell;               //子元素display设为table-cell
+      vertical-align: middle;            //子元素垂直居中
+      p {
+        overflow : hidden;               //文本超出隐藏
+        text-overflow: ellipsis;         //超出部分用省略号代替
+        display: -webkit-box;            //将对象作为弹性伸缩盒子模型展示
+        -webkit-line-clamp: 2;           //显示一个块元素显示的文本行数，需搭配其他WebKit属性。（注意：目前不属于css规范）
+        -webkit-box-orient: vertical;    //设置或检索伸缩盒子对象子元素的排列方式
+        
+        margin-bottom: 0;
+      }
+    }
+
+  }
+}
+```
