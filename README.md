@@ -56,4 +56,4 @@ $(window).resize();
     然后jquery代码  $('.my-img').height($('.my-img').width/3*4);即可
     
 ##### webstorm 关于scss输出css和map文件到css文件夹中的方法
---no-cache --update --sourcemap --watch $FileName$:$ProjectFileDir$\css\$FileNameWithoutExtension$.css
+    --no-cache --update --sourcemap --watch $FileName$:$ProjectFileDir$\css\$FileNameWithoutExtension$.css
