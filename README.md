@@ -55,3 +55,5 @@ $(window).resize();
     首先，图片要自带 width=300 height=450 属性。
     然后jquery代码  $('.my-img').height($('.my-img').width/3*4);即可
     
+##### webstorm 关于scss输出css和map文件到css文件夹中的方法
+--no-cache --update --sourcemap --watch $FileName$:$ProjectFileDir$\css\$FileNameWithoutExtension$.css
