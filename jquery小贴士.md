@@ -58,3 +58,18 @@ $('#t').on('click','td',function(){
     console.timeEnd('very-bad');
 ```
 <br><br>
+
+><a name="t4"/> **t4-编写insertAfter函数**<br>
+DOM虽然提供了insertBefore方法，但是没有提供insertAfter方法，我们自己得写
+
+```javascript
+function insertAfter(newElement,targetElement)｛
+    var parent = targetElement.parentNode;
+    if (parent.lastChild == targetElement) {
+        parent.appendChild(newElement);
+    } else {
+        parent.insertBefore(newElement,targetElement.nextSibling);
+    }
+｝
+```
+<br><br>
