@@ -57,3 +57,5 @@ $(window).resize();
     
 ##### webstorm 关于scss输出css和map文件到css文件夹中的方法
     --no-cache --update --sourcemap --watch $FileName$:$ProjectFileDir$\css\$FileNameWithoutExtension$.css
+##### zepto判断对象是否隐藏
+    if ( mm.css("display") != "none"&& mm.css("visibility") != "hidden" ) { ------ }
