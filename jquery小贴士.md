@@ -73,3 +73,21 @@ function insertAfter(newElement,targetElement)｛
 ｝
 ```
 <br><br>
+
+><a name="t5"/> **t5-用js写一个当文档加载后才执行的函数**<br>
+很多函数需要在DOM加载后才执行
+
+```javascript
+function addLoadEvent(func) {
+    var oldonload = window.onload;
+    if (typeof oldonload != "function") {
+        window.onload = func;
+    } else {
+        window.onload = function() {
+        oldonload();
+        func();
+        }
+    }
+}
+```
+<br><br>
