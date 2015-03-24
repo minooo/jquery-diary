@@ -3,6 +3,17 @@
 
 #####window默认的编码是GBK，如何转为utf-8?
     运行cmd,输入chcp 65001 运行即可！
+    chcp 65001   #换成utf-8代码页
+    chcp 936       #换成默认的gbk
+    
+    一般默认为gbk，若要修改成 utf-8，则需要：
+ 
+    1、cmd窗口输入：
+    chcp 65001
+    
+    2、修改cmd属性：
+ 
+选择字体为“Lucida Console”
 #####css3水平垂直居中代码
 ```javascript
   .center {
