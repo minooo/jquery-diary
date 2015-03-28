@@ -151,3 +151,27 @@ function xhxz(a,b){
   }
 }
 ```
+
+<br><br>
+><a name="t6"/> **图标列表更多的伸缩**
+
+```javascript
+/*首页图标列表*/
+    var hbtn1 = $('.xh-con'),          //列表div
+        hbtn2 = hbtn1.find('li'),      //拿到列表中所有的li
+        hbtn4 = hbtn2.length,          //li的个数
+        hbtn5 = $('.xc-more');         //更多那个按钮
+
+    if (hbtn4 < 6) {                   //也就是加上更多按钮最多5个，此时隐藏更多，剩余4个刚好一排！
+        hbtn5.hide();
+    } else {
+        var hbtn3 = hbtn1.find('li:gt(2)').not(":last");
+        hbtn3.hide();
+        hbtn5.on('touchstart',function(){
+            hbtn3.show();
+            $(this).hide();
+
+        });
+        return false;
+    }
+```
