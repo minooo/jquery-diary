@@ -67,12 +67,12 @@ $(window).resize();
     然后jquery代码  $('.my-img').height($('.my-img').width/3*4);即可
     
 ##### 安装ruby,以及sass简要步骤
-    --安装ruby界面，怒选后两项，跟着步骤走，完事输入ruby -v检测是否安装成功；
-    --然后输入以下代码开始安装sass,
-    --gem sources --remove https://rubygems.org/  
-    --gem source -a https://ruby.taobao.org  
-    --gem install sass  
-    --然后就成功了！
+    安装ruby界面，怒选后两项，跟着步骤走，完事输入ruby -v检测是否安装成功；
+    然后输入以下代码开始安装sass,
+    gem sources --remove https://rubygems.org/  
+    gem source -a https://ruby.taobao.org  
+    gem install sass  
+    然后就成功了！
 ##### webstorm 关于scss输出css和map文件到css文件夹中的方法
     --no-cache --update --sourcemap --watch $FileName$:$ProjectFileDir$\css\$FileNameWithoutExtension$.css
 ##### zepto判断对象是否隐藏
