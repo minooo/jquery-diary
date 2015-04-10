@@ -73,6 +73,7 @@ $(window).resize();
     gem source -a https://ruby.taobao.org  
     gem install sass  
     然后就成功了！
+    另外注意就是-路径一定要是英文的！！！
 ##### webstorm 关于scss输出css和map文件到css文件夹中的方法
     --no-cache --update --sourcemap --watch $FileName$:$ProjectFileDir$\css\$FileNameWithoutExtension$.css
 ##### zepto判断对象是否隐藏
