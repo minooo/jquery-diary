@@ -175,3 +175,20 @@ function xhxz(a,b){
         return false;
     }
 ```
+
+<br><br>
+><a name="t6"/> **当鼠标滚到到某个位置时候，某个元素就执行某个函数**
+
+```javascript
+    var lljl=$(".my-tab-main").offset().top;      //获取元素到页面顶部的距离
+			
+	$(window).scroll(function(){                  //当页面滚动时
+	if($(window).scrollTop()>lljl){               //如果滚动的距离大于元素到顶部的距离
+		$(".my-tab-main").addClass('lr-top-jz');
+	}
+	if($(window).scrollTop()<lljl){               //如果滚动距离小于元素到顶部的距离
+		$(".my-tab-main").removeClass('lr-top-jz');
+	}
+	});
+	//另外，return false 不要用在全局函数里，不然后面的函数没法执行！！！
+```
