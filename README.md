@@ -77,6 +77,8 @@ $(window).resize();
 ##### webstorm 关于scss输出css和map文件到css文件夹中的方法
     Arguments:
     --no-cache --update --sourcemap --watch $FileName$:$ProjectFileDir$\css\$FileNameWithoutExtension$.css
+    如果要输出的css压缩，可以这样设置
+    --no-cache --update --style compressed --sourcemap --watch $FileName$:$ProjectFileDir$\css\$FileNameWithoutExtension$.css
     
     Working directory:
     $FileDir$
